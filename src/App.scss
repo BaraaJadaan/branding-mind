@@ -1,0 +1,14 @@
+// Define a mixin to apply the cursor: pointer style
+@mixin pointer {
+  cursor: pointer;
+}
+
+// Define a list containing the elements that need the style applied
+$list: li, a, button;
+
+// Loop through the list and apply the mixin to each element
+@each $element in $list {
+  #{$element} {
+    @include pointer;
+  }
+}

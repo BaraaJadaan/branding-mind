@@ -1,0 +1,11 @@
+body{
+    background-color: #e59622;
+}
+* {
+    box-sizing: border-box;
+  }
+
+.white{
+    color : white;
+
+}

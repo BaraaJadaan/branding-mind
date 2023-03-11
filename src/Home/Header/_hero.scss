@@ -1,0 +1,71 @@
+.hero{
+    display: flex;
+    flex-direction: column;
+    &_moto1{
+        width: 50rem;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 2rem;
+        display: block;
+        
+    }
+    &_statue{
+        position: relative;
+        width: 28rem;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 7rem;
+        translate: 30% 0;
+        &--head{
+            position: absolute;
+            width: 28rem;
+        }
+        &--outline{
+            position: absolute;
+            width: 38rem;
+            height: auto;
+            right: -5rem;
+            z-index: 1;
+        }
+        &--olive{
+            position: absolute;
+            width: 12rem;
+            height: auto;
+            top: 23rem;
+            left: 23rem;
+        }
+
+    }
+    &_hand{
+        // position: relative;
+        display: block;
+        width: 22rem;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 4rem;
+        translate: -400% 100%;
+    }
+
+    &_moto2{
+        margin-top: 10rem;
+        text-align: center;
+        font-family: 'Yeseva One', cursive;
+        font-size: 5rem;
+        letter-spacing: .3rem;
+    }
+    &_par{
+        text-align: center;
+        font-family: 'Avenir';
+        font-size: 1rem;
+        // letter-spacing: .1rem;
+        margin: 0 23rem;
+        font-weight:400;
+    }
+    &_more{
+        text-align: center;
+        font-family: 'Avenir';
+        font-size: .8rem;
+        font-weight:200;
+    }
+    
+}
