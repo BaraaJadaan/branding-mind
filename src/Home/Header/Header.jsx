@@ -93,7 +93,7 @@ function Header() {
         </div>
 
         <div className='disc'>
-          <h1 className='hero_moto2 white stop_hand'>Brands built<br/>to glow</h1>
+          <h1 className='hero_moto2 white stop_hand'>Brands built<br/>to <span className='hero_moto2--glow'>glow</span></h1>
 
           <p  className='hero_par white'>We are a branding agency that operates as a subdivision of Dow Group. Our team of experienced branding experts is dedicated to helping businesses build strong and memorable brands that stand out in a crowded marketplace. We believe that branding is more than just creating a logo or tagline - it's about developing a unique identity that captures the essence of a business and communicates it to the world.</p>
           <a className='hero_more white' href=""><p><br />READ MORE</p></a>
