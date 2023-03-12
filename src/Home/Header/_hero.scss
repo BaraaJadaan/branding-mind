@@ -47,13 +47,16 @@
     }
 
     &_moto2{
-        margin-top: 10rem;
+        
+
+        margin-top: 18rem;
         text-align: center;
         font-family: 'Yeseva One', cursive;
         font-size: 5rem;
         letter-spacing: .3rem;
     }
     &_par{
+        
         text-align: center;
         font-family: 'Avenir';
         font-size: 1rem;
@@ -63,9 +66,42 @@
     }
     &_more{
         text-align: center;
+        margin: 0;
+        // display: inline-block;
         font-family: 'Avenir';
         font-size: .8rem;
         font-weight:200;
     }
     
 }
+.strokes-container{
+    display: flex;
+    justify-content: end;
+    margin: 0;
+    &_blend{
+        position: absolute;
+        display: block;
+        width: 23rem;
+        height: auto;
+        bottom: 6%;
+        right: -.4rem;
+    }
+    &_strap{
+        position: absolute;
+        display: block;
+        width: 45rem;
+        height: auto;
+        bottom: 5%;
+        right: -.4rem;
+    }
+    &_flower{
+        position: absolute;
+        display: block;
+        width: 19rem;
+        height: auto;
+        bottom: 6%;
+        right: 8rem;
+    }
+    
+}
+

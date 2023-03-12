@@ -9,3 +9,7 @@ body{
     color : white;
 
 }
+::selection {
+    background-color: rgb(231, 118, 6);
+    color: black;
+  }
