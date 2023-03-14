@@ -15,6 +15,7 @@ function Header() {
     const image = useRef(null);
     useEffect(() => { 
       
+  
       const el = image.current;
       gsap.to(".parallax", {
         scrollTrigger: {
@@ -29,9 +30,11 @@ function Header() {
       scrollTrigger: {
         trigger: ".section_hero_hand",
         start: "top bottom",
-        end: "-70px",
+        end: "50% top",
         scrub: 2,
-        }
+        },
+        // y: (i, target) => -ScrollTrigger.maxScroll(window) * target.dataset.speed,
+        // ease: "none"
       });
 
       // add the parallax effect to the timeline
@@ -81,9 +84,9 @@ function Header() {
           <img className='hero_moto1' src={moto} alt={moto} />
         </div>
         <div className='hero_statue'>
-          <img data-speed=".5" className='hero_statue--head parallax' src={statue} alt={statue} />
-          <img data-speed=".3" className='hero_statue--outline parallax' src={statueOutline} alt={statueOutline} />
-          <img data-speed=".4" className='hero_statue--olive parallax' src={statueOlive} alt={statueOlive} />
+          <img data-speed=".3" className='hero_statue--head parallax' src={statue} alt={statue} />
+          <img data-speed=".1" className='hero_statue--outline parallax' src={statueOutline} alt={statueOutline} />
+          <img data-speed=".2" className='hero_statue--olive parallax' src={statueOlive} alt={statueOlive} />
         </div>
         
         <div className='section_hero_hand'>
