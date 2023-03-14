@@ -1,20 +1,109 @@
-.heading-1{
-    margin-top: 4rem;
-    position: relative;
-    /* We need double the stroke width because half of it gets covered up */
-    -webkit-text-stroke: 1px rgb(255, 255, 255);
-    color: transparent;
-    text-align: center;
-    right: 2rem;
-    font-size: 10rem;
-    font-family: 'Yeseva One', cursive;
-    letter-spacing: .3rem;
-    &::after{
-        content: attr(data-text);
+.strokes-container{
+    display: flex;
+    justify-content: end;
+    margin: 0;
+    &_blend{
         position: absolute;
-        left: 0;
-        -webkit-text-stroke: 0;
-        pointer-events: none;
+        display: block;
+        width: 23rem;
+        height: auto;
+        translate: 0% -65%;
     }
+    &_strap{
+        position: absolute;
+        display: block;
+        width: 47rem;
+        height: auto;
+        translate: 0% 10%;
+    }
+    &_flower{
+        position: absolute;
+        display: block;
+        width: 19rem;
+        height: auto;
+        translate: -50% 10%;
+    }
+    
+}
 
+.services{
+    margin-top: 6rem;
+    width: 100%;
+    height: 100%;
+    &_heading-1{
+        margin-top: 5rem;
+        position: relative;
+        -webkit-text-stroke: 1px rgb(255, 255, 255);
+        color: transparent;
+        text-align: center;
+        right: 2rem;
+        font-size: 10rem;
+        font-family: 'Yeseva One', cursive;
+        letter-spacing: .3rem;
+        &::after{
+            content: attr(data-text);
+            position: absolute;
+            left: 0;
+            -webkit-text-stroke: 0;
+            pointer-events: none;
+        }
+    
+    }
+    &_carousal{
+        margin-top: 4rem;
+        padding-left: 2rem;
+        display: flex;
+        width: 100%;
+        height: 590px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+
+        &_container{
+            display: flex;
+            align-items: center;
+            flex-shrink: 0;
+            width: 100vw;
+            // gap: 0px;
+            // pointer-events: none;
+            // position: absolute;
+            // top: 0;
+            // left: 0;
+            &--img{
+                // min-width: 1rem;
+                max-width: 27rem;
+                height: auto;
+                
+            }
+            &--title{
+                color: white;
+                font-family: 'Yeseva One', cursive;
+                font-size: 3.3rem;
+                font-weight: 100;
+                margin-left: 4rem;
+                margin-bottom: 1rem;
+                // justify-self: center;
+            }
+            &--disc{
+                font-family: 'Avenir Next';
+                color: white;
+                font-size: 1.7rem;
+                margin-left: 4rem;
+                margin-bottom: 7rem;
+                font-weight:lighter
+            }
+        }
+    }
+    &_more{
+        position:absolute;
+        translate: 73.7rem 3.2rem;
+        font-size:.7rem;
+        color: transparent;
+    }
+    &_stroks{ 
+        // display: block;
+        width: 30rem;
+        float: right;
+        
+        
+    }
 }

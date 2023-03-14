@@ -9,14 +9,12 @@ import statue from '../../assets/statue.png'
 import statueOutline from '../../assets/statue-outline.png'
 import statueOlive from '../../assets/statue-olive.png'
 import hand from '../../assets/hand.png'
-import blend from '../../assets/darker-bg.png'
-import flower from '../../assets/flower.png'
-import blueStrap from '../../assets/blue-strap.png'
 gsap.registerPlugin(ScrollTrigger);
 
 function Header() {
     const image = useRef(null);
     useEffect(() => { 
+      
       const el = image.current;
       gsap.to(".parallax", {
         scrollTrigger: {
@@ -38,7 +36,7 @@ function Header() {
 
       // add the parallax effect to the timeline
       tl.to(el, {
-        x:-450,
+        x:-540,
         y: 450,
         duration: 2
       });
@@ -83,31 +81,21 @@ function Header() {
           <img className='hero_moto1' src={moto} alt={moto} />
         </div>
         <div className='hero_statue'>
-          <img data-speed=".9" className='hero_statue--head parallax' src={statue} alt={statue} />
-          <img data-speed=".5" className='hero_statue--outline parallax' src={statueOutline} alt={statueOutline} />
-          <img data-speed="1" className='hero_statue--olive parallax' src={statueOlive} alt={statueOlive} />
+          <img data-speed=".5" className='hero_statue--head parallax' src={statue} alt={statue} />
+          <img data-speed=".3" className='hero_statue--outline parallax' src={statueOutline} alt={statueOutline} />
+          <img data-speed=".4" className='hero_statue--olive parallax' src={statueOlive} alt={statueOlive} />
         </div>
         
         <div className='section_hero_hand'>
           <img ref={image} className='hero_hand' src={hand} alt={hand} />
         </div>
 
-        <div className='disc'>
+        <div style={{position: "relative"}} className='disc'>
           <h1 className='hero_moto2 white stop_hand'>Brands built<br/>to <span className='hero_moto2--glow'>glow</span></h1>
 
           <p  className='hero_par white'>We are a branding agency that operates as a subdivision of Dow Group. Our team of experienced branding experts is dedicated to helping businesses build strong and memorable brands that stand out in a crowded marketplace. We believe that branding is more than just creating a logo or tagline - it's about developing a unique identity that captures the essence of a business and communicates it to the world.</p>
-          <a className='hero_more white' href=""><p><br />READ MORE</p></a>
+          <a className='hero_more white' href=""><p><br /><br />READ MORE</p></a>
         </div>
-
-        <div className='strokes-container'>
-            <img className='strokes-container_blend' src={blend} alt={blend} />
-            <img className='strokes-container_strap' src={blueStrap} alt={blueStrap} />
-            <img className='strokes-container_flower' src={flower} alt={flower} />
-        </div>
-        
-        
-
-
       </section>
     </div>
   )

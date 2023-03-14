@@ -3,13 +3,17 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    margin: 2rem 0rem;
+    width: 100%;
+    height: 100%;
 
     &_navigation{
         text-transform: uppercase;
         font-family: 'Avenir';
         text-decoration: none;
         list-style: none;
-        font-size: .9rem;
+        font-size: 1rem;
+        margin-left: 3rem;
         // line-height: 2;
         & li:not(:last-child) {
             margin-bottom: .3rem;
@@ -17,9 +21,9 @@
             
         }
     &_logo{
-        width: 7.5rem;
-        height: 7.5rem;
-        margin-left: 9rem;
+        width: 8.5rem;
+        height: 8.5rem;
+        margin-left: 6rem;
     }
     &_btn{
         display: flex;
@@ -37,7 +41,7 @@ a{
     text-decoration: none;
 }
 .btn{
-    margin: 2rem;
+    margin-right: 3rem;
     
 }
 

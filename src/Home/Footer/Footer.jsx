@@ -1,11 +1,11 @@
 import './Footer.scss'
-import React from 'react'
+import logo from '../../assets/footer-logo.png'
 
 function Footer() {
   return (
-    <div>
-      
-    </div>
+    <footer className='footer'>
+      <img className='footer_logo' src={logo} alt="logo" />
+    </footer>
   )
 }
 
