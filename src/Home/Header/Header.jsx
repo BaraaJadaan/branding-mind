@@ -14,8 +14,6 @@ gsap.registerPlugin(ScrollTrigger);
 function Header() {
     const image = useRef(null);
     useEffect(() => { 
-      
-  
       const el = image.current;
       gsap.to(".parallax", {
         scrollTrigger: {

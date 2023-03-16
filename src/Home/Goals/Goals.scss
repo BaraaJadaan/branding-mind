@@ -33,19 +33,121 @@
     }
     &_grid{
         justify-items: center;
-        //   align-items: center;
           line-height: 1.8;
           margin: 0rem 11.5rem;
-        //   padding-bottom: 10rem;
           display: grid;
           grid-template-columns: repeat(3, 1fr);
           grid-template-rows: repeat(2, 1fr);
           gap: 4rem;
-          row-gap: 5rem;
-        &--disc{
+          row-gap: 4rem;
+
+        &--img{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 18rem;
+            height: 18rem;
+            object-fit: cover;
+            z-index: 9;
+            opacity: 0;
+            pointer-events: none;
+            // mix-blend-mode: multiply;
+            
+        }
+        &--disc1{
             font-size: 1.7rem;
             font-weight: 500;
-            font-family: 'Avenir Next'
+            font-family: 'Avenir Next';
+            position: relative;
+
+            &::before{
+                content: "Expertise and experience to develop a comprehensive branding strategy.";
+                position: absolute;
+                mix-blend-mode: overlay;
+                left: 0;
+                top: 0;
+                z-index: 1000;
+                display: block;
+                max-width: 100%;
+                color: white;
+            }
+
+        }
+        &--disc2{
+            font-size: 1.7rem;
+            font-weight: 500;
+            font-family: 'Avenir Next';
+            position: relative;
+
+            &::before{
+                content: "Creative thinking to upraise your brand to a different level.";
+                position: absolute;
+                mix-blend-mode: overlay;
+                left: 0;
+                top: 0;
+                z-index: 1000;
+                display: block;
+                max-width: 100%;
+                color: white;
+            }
+
+        }
+        &--disc3{
+            font-size: 1.7rem;
+            font-weight: 500;
+            font-family: 'Avenir Next';
+            position: relative;
+
+            &::before{
+                content: "Consistency across all your marketing channels, including your website, social media, and advertising.";
+                position: absolute;
+                mix-blend-mode: overlay;
+                left: 0;
+                top: 0;
+                z-index: 1000;
+                display: block;
+                max-width: 100%;
+                color: white;
+            }
+
+        }
+        &--disc4{
+            font-size: 1.7rem;
+            font-weight: 500;
+            font-family: 'Avenir Next';
+            position: relative;
+
+            &::before{
+                content: "Design identity that leads your segmentation, targeting positioning.";
+                position: absolute;
+                mix-blend-mode: overlay;
+                left: 0;
+                top: 0;
+                z-index: 1000;
+                display: block;
+                max-width: 100%;
+                color: white;
+            }
+
+        }
+        &--disc5{
+            font-size: 1.7rem;
+            font-weight: 500;
+            font-family: 'Avenir Next';
+            position: relative;
+
+            &::before{
+                content: "Differentiate your business from competitors, and increase your revenue.";
+                position: absolute;
+                mix-blend-mode: overlay;
+                left: 0;
+                top: 0;
+                z-index: 1000;
+                display: block;
+                max-width: 100%;
+                color: white;
+            }
+
         }
     }
 }
