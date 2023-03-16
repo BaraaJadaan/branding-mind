@@ -18,15 +18,15 @@ function Services() {
     let ctx = gsap.context(() => {
       let panelsContainer = document.querySelector(".services_carousal_container"),
     tween;
-    const panels = gsap.utils.toArray(".services_carousal .services_carousal_container");
+    const panels = gsap.utils.toArray(".services_carousal_container");
     tween = gsap.to(panels, {
       xPercent: -100 * ( panels.length - 1 ),
-      ease: "none",
+      // ease: "none",
       scrollTrigger: {
-        trigger: ".services_carousal",
+        trigger: ".services",
         pin: true,
-        pinSpacing: true,
-        start: "50% 50%",
+        // pinSpacing: true,
+        start: "0 -10%",
         scrub: 2,
         end: () =>  + (panelsContainer.offsetWidth - innerWidth)
       }
@@ -47,7 +47,7 @@ function Services() {
       </div>
 
       <section className='services_carousal'>
-        <div  className='services_carousal_container'>
+        <div  className='services_carousal_container '>
           <div>
             <img className='services_carousal_container--img' src={service1} alt={service1} />
           </div>
