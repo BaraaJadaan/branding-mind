@@ -26,7 +26,7 @@ function Services() {
         trigger: ".services",
         pin: true,
         // pinSpacing: true,
-        start: "0 -10%",
+        start: "0 -7%",
         scrub: 2,
         end: () =>  + (panelsContainer.offsetWidth - innerWidth)
       }
