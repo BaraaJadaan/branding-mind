@@ -34,8 +34,6 @@ function Header() {
         // y: (i, target) => -ScrollTrigger.maxScroll(window) * target.dataset.speed,
         // ease: "none"
       });
-
-      // add the parallax effect to the timeline
       tl.to(el, {
         x:-500,
         y: 300,

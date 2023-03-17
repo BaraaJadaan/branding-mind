@@ -1,11 +1,7 @@
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
-import './Carousal.scss'
-import catalog1 from '../../assets/catalog1.png'
-import catalog2 from '../../assets/catalog2.png'
-import catalog3 from '../../assets/catalog3.png'
-import catalog4 from '../../assets/catalog4.png'
+import './Carousal.scss';
 import React, { Component } from 'react';
 
 export default class SwipeToSlide extends Component {
