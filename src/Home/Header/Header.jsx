@@ -38,7 +38,7 @@ function Header() {
       // add the parallax effect to the timeline
       tl.to(el, {
         x:-500,
-        y: 400,
+        y: 300,
         duration: 2
       });
 

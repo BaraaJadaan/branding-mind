@@ -7,29 +7,32 @@ function Goals() {
   useEffect(() => {
     let ctx = gsap.context(() => {
       gsap.set('.goals_grid--wrab img.goals_grid--img', { yPercent: -50, xPercent: -50 })
-      const align = (e, image) => {
-        gsap.to(image, {
-          x: e.clientX,
-          y: e.clientY,
-          duration: 0.5,
-          delay: 0.08 
-        });
-      };
+      // const ease = 'power4.out'
   
       gsap.utils.toArray(".goals_grid--wrab").forEach((el) => {
         const image = el.querySelector("img.goals_grid--img"),
+        setX = gsap.quickSetter(image, "x", "px"),
+        setY = gsap.quickSetter(image, "y", "px"),
+        startFollow = () => document.addEventListener("mousemove", align),
+        stopFollow = () => document.removeEventListener("mousemove", align),
           fade = gsap.to(image, {
             autoAlpha: 1,
-            ease: "none",
+            // ease,
             paused: true,
-            onReverseComplete: () => {
-              document.removeEventListener("mousemove", (e) => align(e, image));
-            }
+            onReverseComplete: stopFollow
           });
+          const align = (e, image) => {
+            gsap.to(image, {
+              x: setX(e.clientX),
+              y: setY(e.clientY),
+              duration: 0.5,
+              delay: 0.08 
+            });
+          };
   
         el.addEventListener("mouseenter", (e) => {
           fade.play();
-          document.addEventListener("mousemove", (e) => align(e, image));
+          startFollow();
           align(e, image);
         });
   

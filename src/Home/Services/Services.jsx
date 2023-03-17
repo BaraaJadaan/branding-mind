@@ -6,6 +6,7 @@ import service1 from '../../assets/group1.png'
 import service2 from '../../assets/group2.png'
 import service3 from '../../assets/group3.png'
 import stroks from '../../assets/right-stroks.png'
+import circle from '../../assets/circle.png'
 import gsap from 'gsap'
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
 import { useEffect } from 'react'
@@ -21,16 +22,30 @@ function Services() {
     const panels = gsap.utils.toArray(".services_carousal_container");
     tween = gsap.to(panels, {
       xPercent: -100 * ( panels.length - 1 ),
-      // ease: "none",
+      // ease: "SteppedEase.config(12)",
       scrollTrigger: {
         trigger: ".services",
         pin: true,
         // pinSpacing: true,
         start: "0 -7%",
         scrub: 2,
-        end: () =>  + (panelsContainer.offsetWidth - innerWidth)
+        end: () =>  - (-panelsContainer.offsetWidth - innerWidth - innerWidth)
       }
     });
+    let circle = document.querySelector(".services_circle");
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".services",
+        // pin: true,
+        // pinSpacing: true,
+        start: '0 -7%', // start the animation when the element reaches the center of the viewport
+        // end: 'bottom center', // end the animation when the element leaves the viewport
+        scrub: 2, // smooth animation as you scroll
+        end: () =>  - (-panelsContainer.offsetWidth - innerWidth - innerWidth)
+      },
+    });
+    
+    tl.to(circle, { xPercent: +100 * ( panels.length - 1 )  });
     });
     return () => ctx.revert(); // <-- CLEANUP!
   }, []);
@@ -80,7 +95,10 @@ function Services() {
           </div>
         </div>
       </section>
-
+      <div className='services_numbers_container'>
+        <p className='services_numbers'> <img className='services_circle' src={circle} alt="circle" />01 &nbsp;&nbsp;02 &nbsp;&nbsp;03 &nbsp;&nbsp;04 &nbsp;&nbsp;05 &nbsp;&nbsp;06 &nbsp;&nbsp;07 </p>
+        
+      </div>
       <div >
         <a className='services_more' href="">VIEW WORK</a>
         <img className='services_stroks' src={stroks} alt={stroks} />

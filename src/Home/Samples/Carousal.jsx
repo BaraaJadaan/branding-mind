@@ -20,49 +20,42 @@ export default class SwipeToSlide extends Component {
       autoplaySpeed: 2000,
       pauseOnHover: true,
       swipeToSlide: true, 
+      arrows : false,
     };
     return (
       <div>
         <Slider {...settings}>
             <div className="pad carousal_container1">
                 <div className="image-gradient1"/>
-                <div className='slide-title'>Image</div>
-                {/* <div className='slide-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div> */}
+                {/* <div className='slide-title'>Image</div> */}
             </div>
             <div className="pad carousal_container2">
                 <div className="image-gradient2"/>
-                <div className='slide-title'>Image</div>
-                {/* <div className='slide-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div> */}
+                {/* <div className='slide-title'>Image</div> */}
             </div>
             <div className="pad carousal_container3">
                 <div className="image-gradient3" />
-                <div className='slide-title'>Image</div>
-                {/* <div className='slide-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div> */}
+                {/* <div className='slide-title'>Image</div> */}
             </div>
             <div className="pad carousal_container4">
                 <div className="image-gradient4" />
-                <div className='slide-title'>Image</div>
-                {/* <div className='slide-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div> */}
+                {/* <div className='slide-title'>Image</div> */}
             </div>
             <div className="pad carousal_container1">
                 <div className="image-gradient1"/>
-                <div className='slide-title'>Image</div>
-                {/* <div className='slide-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div> */}
+                {/* <div className='slide-title'>Image</div> */}
             </div>
             <div className="pad carousal_container2">
                 <div className="image-gradient2"/>
-                <div className='slide-title'>Image</div>
-                {/* <div className='slide-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div> */}
+                {/* <div className='slide-title'>Image</div> */}
             </div>
             <div className="pad carousal_container3">
                 <div className="image-gradient3" />
-                <div className='slide-title'>Image</div>
-                {/* <div className='slide-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div> */}
+                {/* <div className='slide-title'>Image</div> */}
             </div>
             <div className="pad carousal_container4">
                 <div className="image-gradient4" />
-                <div className='slide-title'>Image</div>
-                {/* <div className='slide-text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div> */}
+                {/* <div className='slide-title'>Image</div> */}
             </div>
             
         </Slider>
