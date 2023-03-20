@@ -17,10 +17,10 @@ function Samples() {
 
   return (
     <section className='samples'>
-      <div>
-        <img className='samples_strap'  src={straps} alt={straps} />
-        <div className='samples_heading'>Our Work</div>
+      <div className='samples_strap'>
+        <img className='samples_strap--img'  src={straps} alt={straps} />
       </div>
+        <div className='samples_heading'>Our Work</div>
 
       <Carousal/>
 
@@ -39,7 +39,9 @@ function Samples() {
           <img class="samples_logos_grid--logo" src={logo8} alt="logo8" />
         </div>
       </div>
-        <img className='samples_hair' src={hair} alt="hair" />
+      <div className='hair'>
+        <img className='hair-img' src={hair} alt="hair" />
+      </div>
     </section>
 
   )

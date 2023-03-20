@@ -7,7 +7,6 @@ function Goals() {
   useEffect(() => {
     let ctx = gsap.context(() => {
       gsap.set('.goals_grid--wrab img.goals_grid--img', { yPercent: -50, xPercent: -50 })
-      // const ease = 'power4.out'
   
       gsap.utils.toArray(".goals_grid--wrab").forEach((el) => {
         const image = el.querySelector("img.goals_grid--img"),

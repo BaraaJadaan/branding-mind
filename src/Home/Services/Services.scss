@@ -25,7 +25,6 @@
     }
     
 }
-
 .services{
     margin-top: 6rem;
     width: 100%;
@@ -50,118 +49,24 @@
         }
     
     }
-    &_carousal{
-        // height: 70vh;
-        // width: 100%;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;        
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-        padding:0 ;
-        overflow: hidden;
-        // background-color: rgb(255, 0, 187);
-//   background-color: #ddd;
-
-        &_container{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            // padding-left: 2rem;
-            flex-shrink: 0;
-            width: 100vw;
-            
-            // gap: 0px;
-            // pointer-events: none;
-            // position: absolute;
-            // top: 0;
-            // left: 0;
-            &--num{
-                margin-top: 5rem;
-                position: relative;
-                -webkit-text-stroke: .5px rgb(255, 255, 255);
-                color: transparent;
-                text-align: center;
-                right: 2rem;
-                font-size: 1.7rem;
-                translate: -40% 185% ;
-                font-family: 'Yeseva One', cursive;
-                &::after{
-                    content: attr(data-text);
-                    position: absolute;
-                    left: 0;
-                    -webkit-text-stroke: 0;
-                    pointer-events: none;
-                }
-            }
-            &--img{
-                width: 25rem;
-                height: 25rem;
-                object-fit:contain;
-            }
-            &--title{
-                color: white;
-                font-family: 'Yeseva One', cursive;
-                font-size: 3.5rem;
-                font-weight: 100;
-                margin-left: 4rem;
-                margin-bottom: 1rem;
-            }
-            &--disc{
-                font-family: 'Avenir regular';
-                color: white;
-                font-size: 1.7rem;
-                margin-left: 4rem;
-                margin-bottom: 10rem;
-                font-weight:500;
-                // background-color: rgb(255, 0, 21);
-            }
-        }
-    }
-    &_numbers_container{
-        position: relative;
-    }
-    &_numbers{
-        // margin-top: 3rem;
-        position: relative;
-        -webkit-text-stroke: .3px rgb(255, 255, 255);
-        color: transparent;
-        text-align: center;
-        // right: 2rem;
-        translate: -8% -70%;
-        font-size: 1.5rem;
-        font-family: 'Yeseva One', cursive;
-        // letter-spacing: .3rem;
-        &::after{
-            content: attr(data-text);
-            position: absolute;
-            left: 0;
-            -webkit-text-stroke: 0;
-            pointer-events: none;
-        }
     
-    }
-    &_circle{
-        position: absolute;
-        translate: -25% -22%;
-        width: 3rem;
-    }
-    &_more{
+}
+.more-strap{
+    display: flex;
+    justify-content: end;
+    &--link{
         position:absolute;
-        translate: 73.9rem -2.5rem;
+        translate: -23.4rem -2.3rem;
         font-size:.7rem;
         color: transparent;
         z-index: 9;
         // cursor: pointer;
     }
-    &_stroks{ 
+    &--img{ 
         // display: block;
         position: absolute;
-        translate: 238% -20%;
-        // background-color: rgb(13, 255, 0);
+        translate: 0 -20%;
         width: 30rem;
-        float: right;
-        
         
     }
 }

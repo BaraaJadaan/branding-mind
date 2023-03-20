@@ -4,9 +4,14 @@
     padding-bottom: 5rem;
     height: 100%;
     &_strap{
-        position: absolute;
-        translate: 0% -9% ;
-        width: 45rem;
+      display: flex;
+      justify-content: baseline;
+      &--img{
+          position: absolute;
+          translate: 0% -9% ;
+          width: 50rem;
+
+        }
     }
     &_heading{
         display: inline-block;
@@ -55,11 +60,16 @@
             }
         }
     }
-    &_hair{
+  }
+  .hair{
+    display: flex;
+    justify-content: end;
+    &-img{
+      width: 40rem;
       position: absolute;
-      translate: 100% -20%;
+      translate: 0 -20%;
     }
-}
+  }
 @media (max-width: 768px) {
   .samples_logos_grid {
     grid-template-columns: repeat(2, 1fr);

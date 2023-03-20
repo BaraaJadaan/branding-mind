@@ -10,11 +10,15 @@
   },
   "dependencies": {
     "gsap": "^3.11.4",
+    "localforage": "^1.10.0",
     "locomotive-scroll": "^4.1.4",
+    "match-sorter": "^6.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.9.0",
     "react-slick": "^0.29.0",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "sort-by": "^1.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",

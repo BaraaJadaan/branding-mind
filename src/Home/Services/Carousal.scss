@@ -1,0 +1,50 @@
+.carousal_container{
+    margin: 7rem 0rem 1rem 1rem;
+    display: flex;
+    width: 100%;
+    &_info{
+        translate: 0 -20%;
+        margin-right: 21rem;
+    }
+    &--num{
+        margin-top: 5rem;
+        position: relative;
+        -webkit-text-stroke: .5px rgb(255, 255, 255);
+        color: transparent;
+        text-align: center;
+        right: 2rem;
+        z-index: 100;
+        font-size: 1.7rem;
+        translate: -41% 184% ;
+        font-family: 'Yeseva One', cursive;
+        &::after{
+            content: attr(data-text);
+            position: absolute;
+            left: 0;
+            -webkit-text-stroke: 0;
+            pointer-events: none;
+        }
+    }
+    &--img{
+        translate: 0 -12%;
+        max-width: 26rem;
+        height: auto;
+        object-fit:contain;
+    }
+    &--title{
+        display: block;
+        color: white;
+        font-family: 'Yeseva One', cursive;
+        font-size: 3.6rem;
+        font-weight: 100;
+        margin-left: 4rem;
+        margin-bottom: 1rem;
+    }
+    &--disc{
+        font-family: 'Avenir regular';
+        color: white;
+        font-size: 1.8rem;
+        margin-left: 4rem;
+        font-weight:500;
+    }
+}

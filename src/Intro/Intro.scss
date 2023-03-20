@@ -1,0 +1,27 @@
+.vid-background{
+    background-color: white;
+}
+.bg-video{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    // z-index: -1;
+    // opacity: 1;
+    overflow: hidden;
+
+    &__content{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.enter{
+    color: #e59622 ;
+    font-size: 2rem;
+    font-family: 'Yeseva One', cursive;
+    position: fixed;
+    top: 0;
+    left: 0;
+    // pointer-events: none;
+}

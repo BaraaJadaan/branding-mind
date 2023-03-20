@@ -44,8 +44,8 @@ function Header() {
     }, [])
     
   return (
-    <div >
-      <header>
+    <div>
+      <header >
       <nav className='bar'>
         <div>
           <ul className='bar_navigation white'>
@@ -80,9 +80,9 @@ function Header() {
           <img className='hero_moto1' src={moto} alt={moto} />
         </div>
         <div className='hero_statue'>
-          <img data-speed=".4" className='hero_statue--head parallax' src={statue} alt={statue} />
-          <img data-speed=".2" className='hero_statue--outline parallax' src={statueOutline} alt={statueOutline} />
-          <img data-speed=".3" className='hero_statue--olive parallax' src={statueOlive} alt={statueOlive} />
+          <img data-speed=".3" className='hero_statue--head parallax' src={statue} alt={statue} />
+          <img data-speed=".1" className='hero_statue--outline parallax' src={statueOutline} alt={statueOutline} />
+          <img data-speed=".2" className='hero_statue--olive parallax' src={statueOlive} alt={statueOlive} />
         </div>
         
         <div className='section_hero_hand'>

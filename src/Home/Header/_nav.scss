@@ -2,9 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    margin: 2rem 0rem;
-    // width: 100%;
+    // flex-wrap: wrap;
+    padding: 2rem 0rem;
     height: 100%;
 
     &_navigation{
@@ -18,9 +17,6 @@
         & li:not(:last-child) {
             margin-bottom: .3rem;
           }
-        & li:hover{
-            
-        }
         }
     &_logo{
         width: 8.5rem;
@@ -32,10 +28,10 @@
         font-size: 1rem;
         font-family: 'Avenir';
         border: 1px solid #ffffff79;
-        border-radius: 40px;
+        border-radius: 3rem;
         color: #fff;
         background-color: transparent;
-        padding: 20px 35px;
+        padding: 1rem 2rem;
     }
 }
 
