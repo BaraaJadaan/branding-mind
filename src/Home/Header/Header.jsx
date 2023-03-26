@@ -23,38 +23,52 @@ function Header() {
         ease: "none"
       });
 
-      // create a timeline with a parallax effect
       const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".section_hero_hand",
         start: "top bottom",
         end: "50% top",
         scrub: 2,
-        },
-        // y: (i, target) => -ScrollTrigger.maxScroll(window) * target.dataset.speed,
-        // ease: "none"
+        }
       });
-      tl.to(el, {
-        x:-500,
-        y: 300,
-        duration: 2
+      function installMediaQueryWatcher(mediaQuery, layoutChangedCallback) {
+        var mql = window.matchMedia(mediaQuery);
+        mql.addEventListener('change', (e) => layoutChangedCallback(e.matches));
+        layoutChangedCallback(mql.matches);
+      }
+      
+      installMediaQueryWatcher("(max-width: 1800px)", (matches) => {
+        
+        if (matches) {
+          tl.to(el, {
+            x:-300,
+            y: 350,
+            duration: 1
+          });
+        } else {
+          tl.to(el, {
+            x:-500,
+            y: 450,
+            duration: 1
+          });
+        }
       });
 
       
     }, [])
     
   return (
-    <div>
+    <div >
       <header >
       <nav className='bar'>
         <div>
           <ul className='bar_navigation white'>
-            <li>Home</li>
-            <li>About</li>
-            <li>Approach</li>
-            <li>Work</li>
-            <li>Blog</li>
-            <li>Contact</li>
+            <li class="bar_navigation__item"><a href="#" class="bar_navigation__link">home</a></li>
+            <li class="bar_navigation__item"><a href="#" class="bar_navigation__link">about</a></li>
+            <li class="bar_navigation__item"><a href="#" class="bar_navigation__link">approach</a></li>
+            <li class="bar_navigation__item"><a href="#" class="bar_navigation__link">work</a></li>
+            <li class="bar_navigation__item"><a href="#" class="bar_navigation__link">blog</a></li>
+            <li class="bar_navigation__item"><a href="#" class="bar_navigation__link">contact</a></li>
           </ul>
         </div>
 
@@ -64,9 +78,9 @@ function Header() {
 
         <div className='btn'>
           <a href="">
-            <button className='bar_btn'>
+            <button className='bar_btn bar_btn--gradient bar_btn--animated'>
               Get in touch 
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="white" style={{marginLeft:7}} viewBox="0 0 16 16">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="white" style={{marginLeft:7, width:"1.5rem", height:"auto"}} viewBox="0 0 16 16">
                 <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
               </svg>
             </button>
@@ -75,7 +89,7 @@ function Header() {
       </nav>
       </header>
 
-      <section className='hero'>
+      <section  className='hero'>
         <div>
           <img className='hero_moto1' src={moto} alt={moto} />
         </div>
@@ -85,8 +99,8 @@ function Header() {
           <img data-speed=".2" className='hero_statue--olive parallax' src={statueOlive} alt={statueOlive} />
         </div>
         
-        <div className='section_hero_hand'>
-          <img ref={image} className='hero_hand' src={hand} alt={hand} />
+        <div className='hero_hand'>
+          <img ref={image} className='hero_hand--img' src={hand} alt={hand} />
         </div>
 
         <div style={{position: "relative"}} className='disc'>

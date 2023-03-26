@@ -7,11 +7,11 @@ import { useEffect } from 'react';
 function Intro() {
   const navigate = useNavigate();
   const handleVideoEnd = () => {
-    navigate("/branding-mind/home");
+    navigate("/brandingmind/home");
   };
   useEffect(() => {
     let ctx = gsap.context(() => {
-      gsap.set(".enter", {xPercent: -50, yPercent: -50});
+      gsap.set(".enter", {xPercent: 0, yPercent: 150});
 
       let xTo = gsap.quickTo(".enter", "x", {duration: 0.6, ease: "power3"}),
           yTo = gsap.quickTo(".enter", "y", {duration: 0.6, ease: "power3"});
@@ -31,7 +31,7 @@ function Intro() {
           <source src={intro} type="video/mp4"/>
         </video>
       </div>
-      <Link to={`/branding-mind/home`} className="enter">Enter Site</Link>
+      <Link to={`/brandingmind/home`} className="enter">Enter Site</Link>
 
     </div>
   )

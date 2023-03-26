@@ -1,8 +1,12 @@
+@import "../../index.scss" ;
 .samples{
     background-color: #13a89e;
     margin-top: 10rem;
     padding-bottom: 5rem;
     height: 100%;
+  //   @include respond(tab-port) {
+  //     margin-top: 15rem;
+  // }
     &_strap{
       display: flex;
       justify-content: baseline;
@@ -15,17 +19,25 @@
     }
     &_heading{
         display: inline-block;
-        translate: 35% 25% ;
+        translate: 15% 25% ;
         margin-top: 5rem;
         position: relative;
         -webkit-text-stroke: 1px rgb(255, 255, 255);
         color: transparent;
         text-align: center;
-        right: 8rem;
         font-size: 10rem;
         font-family: 'Yeseva One', cursive;
         letter-spacing: .3rem;
         z-index: 0;
+        @include respond(mobile-md) {
+        translate: 0% 0% ;
+        text-align: center;
+             
+        }
+        @include respond(tab-big) {
+          translate: 10% 25% ;
+          
+        }
         &::after{
             content: attr(data-text);
             position: absolute;
@@ -40,7 +52,7 @@
         &--title{
             color: white;
             text-align: center;
-            font-size: 1rem;
+            font-size: 1.2rem;
             font-family: 'Avenir';
             text-transform: uppercase;
             font-weight: 100;
@@ -53,33 +65,45 @@
           width: 100%;
           grid-template-columns: repeat(4, 1fr);
           grid-template-rows: repeat(2, 1fr);
+          
+          @include respond(tab-port) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            padding: 0 0rem;
+          }
+          
             &--logo{
                 width: 45%;
                 height: 45%;
                 object-fit:contain;
+                @include respond(tab-port) {
+                  width: 32%;
+                  height: 32%;
+              }
+              @include respond(mobile-lg) {
+                width: 38%;
+                height: 38%;
+           
+              }
+             
             }
         }
     }
   }
-  .hair{
-    display: flex;
-    justify-content: end;
-    &-img{
-      width: 40rem;
-      position: absolute;
-      translate: 0 -20%;
-    }
-  }
-@media (max-width: 768px) {
-  .samples_logos_grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-  }
+
+.end{
+  display: flex;
+  justify-content: end;
+}
+.hair-img{
+  width: 40rem;
+  position: absolute;
+  translate: 0 -20%;
 }
 
-@media (max-width: 480px) {
-  .samples_logos_grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, 1fr);
-  }
+.blue-img{
+  width: 25rem;
+  position: absolute;
+  translate: 0 -35%;
 }
+

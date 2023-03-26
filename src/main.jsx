@@ -11,12 +11,12 @@ import Intro from './Intro/Intro';
 
 const router = createBrowserRouter([
   {
-    path: "/branding-mind/home",
+    path: "/brandingmind/home",
     element: <App />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/branding-mind",
+    path: "/brandingmind",
     element: <Intro />,
     errorElement: <ErrorPage />,
   }

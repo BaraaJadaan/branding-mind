@@ -13,11 +13,28 @@
         list-style: none;
         font-size: 1rem;
         margin-left: 3rem;
-        // line-height: 2;
+        
+          &__link {
+            &:link,
+            &:visited {
+                color: white;
+                text-decoration: none;
+                text-transform: uppercase;
+                display: inline-block;
+                transition: all .2s;
+            }
+    
+            &:hover,
+            &:active {
+                color: white;
+                box-shadow: 0 1rem 2rem rgba(black, .4);
+                transform: scale(1.1);
+            }
+        }
         & li:not(:last-child) {
             margin-bottom: .3rem;
           }
-        }
+    }
     &_logo{
         width: 8.5rem;
         height: 8.5rem;
@@ -28,10 +45,54 @@
         font-size: 1rem;
         font-family: 'Avenir';
         border: 1px solid #ffffff79;
+        // display: inline-block;
         border-radius: 3rem;
         color: #fff;
         background-color: transparent;
         padding: 1rem 2rem;
+        transition: all .4s;
+        position: relative;
+        &:hover{
+            transform: translateY(-.5rem);
+            box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.323);
+    
+            &:hover::after {
+                transform: scale(1.5);
+                opacity: 0; }
+        }
+        
+        &:active{
+            transform: translateY(.1rem);
+            box-shadow: 0 .5rem .5rem rgba(0, 0, 0, 0.423);
+        }
+        
+        &--animated{
+            animation: moveFromBottom 1s ease-out 0.75s;
+            animation-fill-mode: backwards;
+        }
+        
+        &--gradient{
+            background-color: #db8d18;
+            color: rgba(255, 255, 255, 0.7);
+    
+            &::after{
+                background-color: #db8d18;
+            }
+        }
+        
+        &::after{
+            content: "";
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+            border-radius: 3rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transition: all .4s;
+        }
+        
     }
 }
 
@@ -44,3 +105,16 @@ a{
 }
 
 
+@keyframes moveFromBottom {
+
+    0% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}

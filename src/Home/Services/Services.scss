@@ -1,3 +1,4 @@
+@import "../../index.scss" ;
 .strokes-container{
     display: flex;
     justify-content: end;
@@ -25,10 +26,16 @@
     }
     
 }
+
 .services{
     margin-top: 6rem;
     width: 100%;
     height: 100%;
+    
+    @include respond(tab-port) {
+         margin-bottom: 30vh;
+    }
+    
     // background-color: aqua;
     &_heading-1{
         margin-top: 3rem;
@@ -49,7 +56,109 @@
         }
     
     }
+    &_carousal{
+
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;        
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        padding:0 ;
+        overflow: hidden;
+        @include respond(tab-port) {
+            display: block;
+        }
+        
+    }
+    &_numbers_container{
+        position: relative;
+    }
+    &_numbers{
+        // margin-top: 1rem;
+        position: relative;
+        -webkit-text-stroke: .3px rgb(255, 255, 255);
+        color: transparent;
+        text-align: center;
+        translate: -8% -70%;
+        font-size: 1.5rem;
+        font-family: 'Yeseva One', cursive;
+        @include respond(tab-port) {
+            display: none;
+        }
+        &::after{
+            content: attr(data-text);
+            position: absolute;
+            left: 0;
+            -webkit-text-stroke: 0;
+            pointer-events: none;
+        }
     
+    }
+    &_circle{
+        position: absolute;
+        translate: -25% -22%;
+        width: 3rem;
+        @include respond(tab-port) {
+            display: none;
+        }
+    }
+   
+}
+.carousal_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20% 0 4%;
+    flex-shrink: 0;
+    width: 90vw;
+    @include respond(tab-port) {
+        padding: 0 2% 0 4%;
+    }
+
+    &--num{
+        margin-top: 5rem;
+        position: relative;
+        -webkit-text-stroke: .5px rgb(255, 255, 255);
+        color: transparent;
+        text-align: center;
+        font-size: 1.7rem;
+        translate: -46% 170% ;
+        font-family: 'Yeseva One', cursive;
+        &::after{
+            content: attr(data-text);
+            position: absolute;
+            left: 0;
+            -webkit-text-stroke: 0;
+            pointer-events: none;
+        }
+    }
+    &--img{
+        width: 25rem;
+        height: 25rem;
+        object-fit:contain;
+    }
+    &--title{
+        color: white;
+        font-family: 'Yeseva One', cursive;
+        font-size: 3.5rem;
+        font-weight: 100;
+        margin-left: 4rem;
+        margin-bottom: 1rem;
+        @include respond(tab-port) {
+            
+        }
+    }
+    &--disc{
+        font-family: 'Avenir regular';
+        color: white;
+        font-size: 1.7rem;
+        margin-left: 4rem;
+        margin-bottom: 20%;
+        font-weight:500;
+        @include respond(tab-port) {
+           
+        }
+    }
 }
 .more-strap{
     display: flex;

@@ -1,24 +1,44 @@
+@import "../../index.scss" ;
+
 .carousal{
-    margin: 0 2rem;
+    margin: 0 auto;
+    display: block;
     // margin-left: 1rem;
+    width: 98%;
     height: 27rem;
     translate: 0 -8%;
+    @include respond(tab-lg) {
+        width: 85%;
+           
+    }
+    @include respond(tab-md) {
+        width: 75%;
+           
+    }
+    @include respond(mobile-md) {
+        width: 87%;
+           
+    }
+    @include respond(mobile-sm) {
+        width: 95%;
+           
+    }
 }
 .pad{
     padding-top: 2rem;
 }
 
 .carousal_container1{
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
 }
 .carousal_container2{
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
 }
 .carousal_container3{
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
 }
 .carousal_container4{
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
 }
 .image-gradient1{
     background-image: url(../../assets/catalog1.png);
@@ -27,8 +47,9 @@
     height: 24rem;
     width: 24rem;
     transition: all .6s;
+
     &:hover{
-        background-image: linear-gradient(0deg, #00000039 0%, transparent), url(../../assets/catalog1.png);
+        background-image: linear-gradient(0deg, #ffffff3d 0%, transparent), url(../../assets/catalog1.png);
         translate: 0 -5%;
         box-shadow: 0px 40px 58px -26px rgba(0, 0, 0, 0.402);
 
@@ -42,7 +63,7 @@
     width: 24rem;
     transition: all .6s;
     &:hover{
-        background-image: linear-gradient(0deg, #00000039 0%, transparent), url(../../assets/catalog2.png);
+        background-image: linear-gradient(0deg, #ffffff3d 0%, transparent), url(../../assets/catalog2.png);
         translate: 0 -5%;
         box-shadow: 0px 40px 58px -26px rgba(0, 0, 0, 0.402);
 
@@ -56,7 +77,7 @@
     width: 24rem;
     transition: all .6s;
     &:hover{
-        background-image: linear-gradient(0deg, #00000039 0%, transparent), url(../../assets/catalog3.png);
+        background-image: linear-gradient(0deg, #ffffff3d 0%, transparent), url(../../assets/catalog3.png);
         translate: 0 -5%;
         box-shadow: 0px 40px 58px -26px rgba(0, 0, 0, 0.402);
 
@@ -70,44 +91,53 @@
     width: 24rem;
     transition: all .6s;
     &:hover{
-        background-image: linear-gradient(0deg, #00000039 0%, transparent), url(../../assets/catalog4.png);
+        background-image: linear-gradient(0deg, #ffffff3d 0%, transparent), url(../../assets/catalog4.png);
         translate: 0 -5%;
         box-shadow: 0px 40px 58px -26px rgba(0, 0, 0, 0.402);
     }
 }
 
-// .slide-title{
-//     position: absolute;
-//     bottom: 3rem;
-//     translate: 50px 0;
-//     color: white;
-//     font-family: 'Avenir';
-//     font-size: 2rem;
-//     font-weight: bold;
-//     transition: .6s;
-// }
-// .carousal_container1:hover .slide-title{
-//     transition:.6s;
-//     animation: fadeIn .6s;
-//     bottom: 6rem;
-// }
-// .carousal_container2:hover .slide-title{
-//     transition: .6s;
-//     animation: fadeIn .6s;
-//     bottom: 6rem;
-// }
-// .carousal_container3:hover .slide-title{
-//     transition: .6s;
-//     animation: fadeIn .6s;
-//     bottom: 6rem;
-// }
-.image-gradient1:hover .slide-title{
+.slide-title{
+    position: absolute;
+    animation: fadeOut .6s;
+    z-index: -1;
+    translate: 35% -6rem;
+    color: white;
+    font-family: 'Avenir';
+    font-size: 2rem;
+    font-weight: bold;
     transition: .6s;
+}
+.carousal_container1:hover .slide-title{
+    transition:.6s;
     animation: fadeIn .6s;
-    bottom: 6rem;
+    translate: 35% -10rem;
+    z-index: 2;
+}
+.carousal_container2:hover .slide-title{
+    transition:.6s;
+    animation: fadeIn .6s;
+    translate: 35% -10rem;
+    z-index: 2;
+}
+.carousal_container3:hover .slide-title{
+    transition:.6s;
+    animation: fadeIn .6s;
+    translate: 35% -10rem;
+    z-index: 2;
+}
+.carousal_container4:hover .slide-title{
+    transition:.6s;
+    animation: fadeIn .6s;
+    translate: 35% -10rem;
+    z-index: 2;
 }
 
-// @keyframes fadeIn {
-//     0% { opacity: 0; }
-//     100% { opacity: 1; }
-//   }
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }

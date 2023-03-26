@@ -50,26 +50,26 @@ function Goals() {
 
         <div className='goals_grid--wrab'>
           <p data-title-text className='goals_grid--disc1'>Expertise and experience to develop a comprehensive branding strategy.</p>
-          <img className='goals_grid--img' src="https://picsum.photos/id/277/400/400" alt="" />
+          <img className='goals_grid--img' src="https://picsum.photos/id/277/200/200" alt="" />
         </div>
 
         <div className='goals_grid--wrab'>
           <p className='goals_grid--disc2'>Creative thinking to upraise your brand to a different level.</p>
-          <img className='goals_grid--img' src="https://picsum.photos/id/272/400/400" alt="" />
+          <img className='goals_grid--img' src="https://picsum.photos/id/250/200/200" alt="" />
         </div>
 
         <div className='goals_grid--wrab'>
           <p className='goals_grid--disc3'>Consistency across all your marketing channels, including your website, social media, and advertising.</p>
-          <img className='goals_grid--img' src="https://picsum.photos/id/271/400/400" alt="" />
+          <img className='goals_grid--img' src="https://picsum.photos/id/271/200/200" alt="" />
         </div>
 
         <div className='goals_grid--wrab'>
           <p className='goals_grid--disc4'>Design identity that leads your segmentation, targeting positioning.</p>
-          <img className='goals_grid--img' src="https://picsum.photos/id/258/400/400" alt="" />
+          <img className='goals_grid--img' src="https://picsum.photos/id/258/200/200" alt="" />
         </div>
         <div className='goals_grid--wrab'>
           <p className='goals_grid--disc5'>Differentiate your business from competitors, and increase your revenue.</p>
-          <img className='goals_grid--img' src="https://picsum.photos/id/255/400/400" alt="" />
+          <img className='goals_grid--img' src="https://picsum.photos/id/743/200/200" alt="" />
         </div>
       </div>
     </section>

@@ -10,6 +10,7 @@ import logo6 from '../../assets/logo-sample6.png'
 import logo7 from '../../assets/logo-sample7.png'
 import logo8 from '../../assets/logo-sample8.png'
 import hair from '../../assets/white-hair.png'
+import blue from '../../assets/blue-hair.png'
 // import { useEffect, useRef } from 'react'
 
 
@@ -19,6 +20,9 @@ function Samples() {
     <section className='samples'>
       <div className='samples_strap'>
         <img className='samples_strap--img'  src={straps} alt={straps} />
+      </div>
+      <div className='end'>
+        <img className='blue-img' src={blue} alt="blue" />
       </div>
         <div className='samples_heading'>Our Work</div>
 
@@ -39,9 +43,10 @@ function Samples() {
           <img class="samples_logos_grid--logo" src={logo8} alt="logo8" />
         </div>
       </div>
-      <div className='hair'>
+      <div className='end'>
         <img className='hair-img' src={hair} alt="hair" />
       </div>
+      
     </section>
 
   )

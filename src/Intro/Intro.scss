@@ -5,8 +5,6 @@
     position:absolute;
     height: 100%;
     width: 100%;
-    // z-index: -1;
-    // opacity: 1;
     overflow: hidden;
 
     &__content{
@@ -21,7 +19,7 @@
     font-size: 2rem;
     font-family: 'Yeseva One', cursive;
     position: fixed;
-    top: 0;
-    left: 0;
+    top: -5rem;
+    left: -5rem;
     // pointer-events: none;
 }

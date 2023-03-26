@@ -12,14 +12,3 @@ $list: li, a, button;
     @include pointer;
   }
 }
-.App {
-  overflow-x: hidden;
-  
-  // position:fixed;
-  // height: 100%;
-  // width: 100%;
-  // top: 0;
-  // left: 0;
-  // right: 0;
-  // bottom: 0;
-}
