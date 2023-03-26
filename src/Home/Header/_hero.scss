@@ -47,6 +47,7 @@
     &_hand{
         // display: flex;
         // justify-content: baseline;
+        
         &--img{
             // position: absolute;
             display: block;
@@ -55,6 +56,10 @@
             margin: 0 auto;
             padding-top: 4rem;
             translate: -180% 200%;
+            @include respond(mobile-lg) {
+                translate: -2000% 200%;
+            
+            }
             
         }
     }
