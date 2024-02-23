@@ -1,3 +1,6 @@
+// Vendors
+@import '../node_modules/locomotive-scroll/dist/locomotive-scroll';
+
 @mixin respond($breakpoint) {
     @if $breakpoint == mobile-sm {
         @media only screen and (max-width: 16em) { @content };    //320

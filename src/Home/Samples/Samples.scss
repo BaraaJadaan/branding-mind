@@ -1,7 +1,7 @@
 @import "../../index.scss" ;
 .samples{
     background-color: #13a89e;
-    margin-top: 10rem;
+    margin-top: 15rem;
     padding-bottom: 5rem;
     height: 100%;
   //   @include respond(tab-port) {
@@ -104,6 +104,6 @@
 .blue-img{
   width: 25rem;
   position: absolute;
-  translate: 0 -35%;
+  translate: 0 -20%;
 }
 

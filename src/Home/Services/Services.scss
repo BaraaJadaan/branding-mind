@@ -57,13 +57,12 @@
     
     }
     &_carousal{
-
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;        
         -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-        padding:0 ;
+        margin-bottom: 3rem ;
         overflow: hidden;
         @include respond(tab-port) {
             display: block;
@@ -105,10 +104,11 @@
    
 }
 .carousal_container{
+    
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 20% 0 4%;
+    padding: 0 20% 0 10%;
     flex-shrink: 0;
     width: 90vw;
     @include respond(tab-port) {

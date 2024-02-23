@@ -41,7 +41,7 @@ export default class SwipeToSlide extends Component {
       ]
     };
     return (
-      <div>
+      <div className='centerize'>
         <Slider {...settings}>
             <div className="pad carousal_container1">
                 <div className="image-gradient1"/>

@@ -42,7 +42,7 @@
     }
     &_btn{
         display: flex;
-        font-size: 1rem;
+        font-size: 1.15rem;
         font-family: 'Avenir';
         border: 1px solid #ffffff79;
         // display: inline-block;
@@ -72,11 +72,11 @@
         }
         
         &--gradient{
-            background-color: #db8d18;
+            background-color: #e59622;
             color: rgba(255, 255, 255, 0.7);
     
             &::after{
-                background-color: #db8d18;
+                background-color: #e59622;
             }
         }
         

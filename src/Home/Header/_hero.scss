@@ -26,18 +26,18 @@
         }
         &--head{
             position: absolute;
-            width: 33rem;
+            width: 36rem;
         }
         &--outline{
             position: absolute;
-            width: 40rem;
+            width: 44rem;
             height: auto;
             right: -8rem;
             z-index: 1;
         }
         &--olive{
             position: absolute;
-            width: 10rem;
+            width: 12rem;
             height: auto;
             top: 32rem;
             left: 28rem;
@@ -55,7 +55,7 @@
             height: auto;
             margin: 0 auto;
             padding-top: 4rem;
-            translate: -180% 200%;
+            translate: -330% 30%;
             @include respond(mobile-lg) {
                 translate: -2000% 200%;
             

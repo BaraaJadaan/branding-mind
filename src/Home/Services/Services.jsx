@@ -46,7 +46,7 @@ function Services() {
       scrollTrigger: {
         trigger: ".services",
         pin: true,
-        start: "35 0",
+        start: "0 0",
         scrub: 2,
         end: () =>  - (-panelsContainer.offsetWidth - innerWidth - innerWidth)
       }
@@ -55,7 +55,7 @@ function Services() {
     const cir = gsap.timeline({
       scrollTrigger: {
         trigger: ".services",
-        start: '35 0',
+        start: '0 0',
         scrub: 2,
         end: () =>  - (-panelsContainer.offsetWidth - innerWidth - innerWidth)
       },
@@ -78,7 +78,7 @@ function Services() {
             trigger: ".services",
             pin: true,
             start: "-7 0",
-            scrub: 2,
+            // scrub: 2,
             end: () =>  - (-panelsContainer.offsetWidth - innerWidth - innerWidth)
           }
         });
@@ -87,7 +87,7 @@ function Services() {
           scrollTrigger: {
             trigger: ".services",
             start: '-7 0',
-            scrub: 2,
+            // scrub: 2,
             end: () =>  - (-panelsContainer.offsetWidth - innerWidth - innerWidth)
           },
         });

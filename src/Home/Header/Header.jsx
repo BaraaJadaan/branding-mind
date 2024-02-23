@@ -9,6 +9,9 @@ import statue from '../../assets/statue.png'
 import statueOutline from '../../assets/statue-outline.png'
 import statueOlive from '../../assets/statue-olive.png'
 import hand from '../../assets/hand.png'
+import LocomotiveScroll from 'locomotive-scroll';
+
+const locomotiveScroll = new LocomotiveScroll();
 gsap.registerPlugin(ScrollTrigger);
 
 function Header() {
@@ -31,28 +34,10 @@ function Header() {
         scrub: 2,
         }
       });
-      function installMediaQueryWatcher(mediaQuery, layoutChangedCallback) {
-        var mql = window.matchMedia(mediaQuery);
-        mql.addEventListener('change', (e) => layoutChangedCallback(e.matches));
-        layoutChangedCallback(mql.matches);
-      }
-      
-      installMediaQueryWatcher("(max-width: 1800px)", (matches) => {
-        
-        if (matches) {
-          tl.to(el, {
-            x:-300,
-            y: 350,
-            duration: 1
-          });
-        } else {
-          tl.to(el, {
-            x:-500,
-            y: 450,
-            duration: 1
-          });
-        }
-      });
+      tl.to(el, {
+        x: -200,
+        y: 380,
+      })
 
       
     }, [])

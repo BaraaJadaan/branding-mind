@@ -31,7 +31,7 @@ function Intro() {
           <source src={intro} type="video/mp4"/>
         </video>
       </div>
-      <Link to={`/brandingmind/home`} className="enter">Enter Site</Link>
+      <a href="/brandingmind/home" className="enter">Enter Site</a>
 
     </div>
   )
