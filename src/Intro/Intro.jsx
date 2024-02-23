@@ -8,6 +8,7 @@ function Intro() {
   const navigate = useNavigate();
   const handleVideoEnd = () => {
     navigate("/brandingmind/home");
+    location.reload()
   };
 
   //mouse tracing
@@ -33,7 +34,7 @@ function Intro() {
           <source src={intro} type="video/mp4"/>
         </video>
       </div>
-      <a href="/brandingmind/home" className="enter">Enter Site</a>
+      <a onClick={handleVideoEnd} className="enter">Enter Site</a>
 
     </div>
   )
