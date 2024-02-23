@@ -9,9 +9,7 @@ import statue from '../../assets/statue.png'
 import statueOutline from '../../assets/statue-outline.png'
 import statueOlive from '../../assets/statue-olive.png'
 import hand from '../../assets/hand.png'
-import LocomotiveScroll from 'locomotive-scroll';
 
-const locomotiveScroll = new LocomotiveScroll();
 gsap.registerPlugin(ScrollTrigger);
 
 function Header() {
@@ -73,7 +71,7 @@ function Header() {
 
       <section  className='hero'>
         <div>
-          <img className='hero_moto1' src={moto} alt={moto} />
+          <img onLoad={()=>ScrollTrigger.refresh()} className='hero_moto1' src={moto} alt={moto} />
         </div>
         <div className='hero_statue'>
           <img data-speed=".3" className='hero_statue--head parallax' src={statue} alt={statue} />
@@ -82,7 +80,7 @@ function Header() {
         </div>
         
         <div className='hero_hand'>
-          <img ref={image} className='hero_hand--img' src={hand} alt={hand} />
+          <img onLoad={()=>ScrollTrigger.refresh()} ref={image} className='hero_hand--img' src={hand} alt={hand} />
         </div>
 
         <div style={{position: "relative"}} className='disc'>

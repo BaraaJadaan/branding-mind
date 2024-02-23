@@ -1,4 +1,4 @@
-import {BrowserRouter, Routes, Route, useNavigate} from "react-router-dom";
+import {BrowserRouter, Routes, Route, useNavigate, Link} from "react-router-dom";
 import "./Intro.scss"
 import intro from '../assets/intro.mp4'
 import gsap from 'gsap'
@@ -8,7 +8,6 @@ function Intro() {
   const navigate = useNavigate();
   const handleVideoEnd = () => {
     navigate("/brandingmind/home");
-    location.reload()
   };
 
   //mouse tracing
@@ -34,7 +33,7 @@ function Intro() {
           <source src={intro} type="video/mp4"/>
         </video>
       </div>
-      <a onClick={handleVideoEnd} className="enter">Enter Site</a>
+      <Link to={`/brandingmind/home`} className="enter">Enter Site</Link>
 
     </div>
   )

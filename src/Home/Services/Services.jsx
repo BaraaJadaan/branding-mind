@@ -126,7 +126,7 @@ function Services() {
       {data.map((item, index) => (
         <div  key={index}>
           <div  className='carousal_container'>
-            <img className='carousal_container--img' src={item.image} alt={item.title} />
+            <img onLoad={()=>ScrollTrigger.refresh()} className='carousal_container--img' src={item.image} alt={item.title} />
             <div className='carousal_container_info'>
               <div className='carousal_container--num'>{item.number}</div>
               <h2 className='carousal_container--title'>{item.title}</h2>
