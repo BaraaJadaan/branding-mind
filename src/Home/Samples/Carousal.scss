@@ -40,7 +40,7 @@
     padding-bottom: 3rem;
 }
 .image-gradient1{
-    background-image: url(../../assets/catalog1.png);
+    background-image: url(../../assets/catalog1.webp);
     background-size: cover;
     background-repeat: no-repeat;
     height: 24rem;
@@ -48,7 +48,7 @@
     transition: all .6s;
 
     &:hover{
-        background-image: linear-gradient(0deg, #ffffff3d 0%, transparent), url(../../assets/catalog1.png);
+        background-image: linear-gradient(0deg, #ffffff3d 0%, transparent), url(../../assets/catalog1.webp);
         translate: 0 -5%;
         -webkit-box-shadow: 0px 15px 23px -4px rgba(0,0,0,0.43);
         -moz-box-shadow: 0px 15px 23px -4px rgba(0,0,0,0.43);
@@ -57,14 +57,14 @@
     }
 }
 .image-gradient2{
-    background-image: url(../../assets/catalog2.png);    
+    background-image: url(../../assets/catalog2.webp);    
     background-size: cover;
     background-repeat: no-repeat;
     height: 24rem;
     width: 24rem;
     transition: all .6s;
     &:hover{
-        background-image: linear-gradient(0deg, #ffffff3d 0%, transparent), url(../../assets/catalog2.png);
+        background-image: linear-gradient(0deg, #ffffff3d 0%, transparent), url(../../assets/catalog2.webp);
         translate: 0 -5%;
         -webkit-box-shadow: 0px 15px 23px -4px rgba(0,0,0,0.43);
         -moz-box-shadow: 0px 15px 23px -4px rgba(0,0,0,0.43);
@@ -73,14 +73,14 @@
     }
 }
 .image-gradient3{
-    background-image: url(../../assets/catalog3.png);
+    background-image: url(../../assets/catalog3.webp);
     background-size: cover;
     background-repeat: no-repeat;
     height: 24rem;
     width: 24rem;
     transition: all .6s;
     &:hover{
-        background-image: linear-gradient(0deg, #ffffff3d 0%, transparent), url(../../assets/catalog3.png);
+        background-image: linear-gradient(0deg, #ffffff3d 0%, transparent), url(../../assets/catalog3.webp);
         translate: 0 -5%;
         -webkit-box-shadow: 0px 15px 23px -4px rgba(0,0,0,0.43);
         -moz-box-shadow: 0px 15px 23px -4px rgba(0,0,0,0.43);
@@ -89,14 +89,14 @@
     }
 }
 .image-gradient4{
-    background-image: url(../../assets/catalog4.png);
+    background-image: url(../../assets/catalog4.webp);
     background-size: cover;
     background-repeat: no-repeat;
     height: 24rem;
     width: 24rem;
     transition: all .6s;
     &:hover{
-        background-image: linear-gradient(0deg, #ffffff3d 0%, transparent), url(../../assets/catalog4.png);
+        background-image: linear-gradient(0deg, #ffffff3d 0%, transparent), url(../../assets/catalog4.webp);
         translate: 0 -5%;
         -webkit-box-shadow: 0px 15px 23px -4px rgba(0,0,0,0.43);
         -moz-box-shadow: 0px 15px 23px -4px rgba(0,0,0,0.43);

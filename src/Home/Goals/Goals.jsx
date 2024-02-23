@@ -1,6 +1,6 @@
 import './Goals.scss'
 import gsap from 'gsap'
-import straps from '../../assets/white-straps.png'
+import straps from '../../assets/white-straps.webp'
 import { useEffect } from 'react';
 
 function Goals() {

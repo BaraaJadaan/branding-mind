@@ -3,12 +3,12 @@ import './_hero.scss'
 import gsap from 'gsap'
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
 import { useRef, useEffect } from "react";
-import logo from '../../assets/header-logo.png'
-import moto from '../../assets/moto.png'
-import statue from '../../assets/statue.png'
-import statueOutline from '../../assets/statue-outline.png'
-import statueOlive from '../../assets/statue-olive.png'
-import hand from '../../assets/hand.png'
+import logo from '../../assets/header-logo.webp'
+import moto from '../../assets/moto.webp'
+import statue from '../../assets/statue.webp'
+import statueOutline from '../../assets/statue-outline.webp'
+import statueOlive from '../../assets/statue-olive.webp'
+import hand from '../../assets/hand.webp'
 
 gsap.registerPlugin(ScrollTrigger);
 
