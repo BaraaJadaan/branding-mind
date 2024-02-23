@@ -1,5 +1,4 @@
 import './App.scss'
-import Intro from './Intro/Intro'
 import Home from './Pages/Home'
 
 function App() {

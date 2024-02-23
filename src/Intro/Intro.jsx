@@ -1,4 +1,4 @@
-import {Link, Navigate, useNavigate} from "react-router-dom";
+import {BrowserRouter, Routes, Route, useNavigate} from "react-router-dom";
 import "./Intro.scss"
 import intro from '../assets/intro.mp4'
 import gsap from 'gsap'
@@ -9,6 +9,8 @@ function Intro() {
   const handleVideoEnd = () => {
     navigate("/brandingmind/home");
   };
+
+  //mouse tracing
   useEffect(() => {
     let ctx = gsap.context(() => {
       gsap.set(".enter", {xPercent: 0, yPercent: 150});
@@ -20,10 +22,10 @@ function Intro() {
         xTo(e.pageX);
         yTo(e.pageY);
       });
-
     });
     return () => ctx.revert();
   }, []);
+  
   return (
     <div className="vid-background">
       <div className="bg-video">
@@ -31,7 +33,7 @@ function Intro() {
           <source src={intro} type="video/mp4"/>
         </video>
       </div>
-      <a href={`/brandingmind/home`} className="enter">Enter Site</a>
+      <a href="/brandingmind/home" className="enter">Enter Site</a>
 
     </div>
   )
